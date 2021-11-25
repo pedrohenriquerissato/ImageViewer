@@ -153,14 +153,14 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/pedrohenriquerissato/ImageViewer.svg?style=for-the-badge
 [contributors-url]: https://github.com/pedrohenriquerissato/ImageViewer/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/pedrohenriquerissato/ImageViewer.svg?style=for-the-badge
 [forks-url]: https://github.com/pedrohenriquerissato/ImageViewer/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/pedrohenriquerissato/ImageViewer.svg?style=for-the-badge
 [stars-url]: https://github.com/pedrohenriquerissato/ImageViewer/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/pedrohenriquerissato/ImageViewer.svg?style=for-the-badge
 [issues-url]: https://github.com/pedrohenriquerissato/ImageViewer/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/pedrohenriquerissato/ImageViewer.svg?style=for-the-badge
 [license-url]: https://github.com/pedrohenriquerissato/ImageViewer/blob/master/LICENSE
 [linkedin-logo]: https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg
