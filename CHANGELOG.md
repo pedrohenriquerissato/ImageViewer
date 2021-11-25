@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-- Applied a correction suggested by Dependabot about opencv-python: https://github.com/pedrohenriquerissato/ImageViewer/pull/2
+- Applied a correction suggested by Dependabot about opencv-python: #[2](https://github.com/pedrohenriquerissato/ImageViewer/pull/2)
 
 ## [1.0.0] - 2019-10-04
 
