@@ -6,8 +6,8 @@ import sys
 from send2trash import send2trash
 from natsort import natsorted, ns
 
-
 def image_viewer(__self__, start_index):
+    """Process user entries and prepare to display specific images"""
     images = get_all_files(__self__)
     size_of_list = len(images)
     i = 0
@@ -21,9 +21,9 @@ def image_viewer(__self__, start_index):
     while key != 27:
         key = cv2.waitKey()
         print(key)
-        if key == IMAGE_PREVIOUS and i != 0:  # comma char
+        if key == IMAGE_PREVIOUS and i != 0:  
             i -= 1
-        elif key == IMAGE_NEXT and i < size_of_list:  # dot char
+        elif key == IMAGE_NEXT and i < size_of_list:  
             i += 1
         elif key == IMAGE_FORWARD:
             if i + 10 < size_of_list:
@@ -35,14 +35,12 @@ def image_viewer(__self__, start_index):
                 i -= 10
             else:
                 show_image(images[0])
-        elif key == IMAGE_DELETE:  # d - deletes file
+        elif key == IMAGE_DELETE:
             send2trash(images[i])
             images.pop(i)
             size_of_list = len(images)
             if i > size_of_list:
                 i = size_of_list
-        # elif i != size_of_list:
-        #   i+=1
 
         show_image(images[i])
 
@@ -51,9 +49,16 @@ def image_viewer(__self__, start_index):
 
 
 def get_all_files(__self__):
-    # OpenCV supported filetypes
-    filetypes = ["*.bmp", "*.dib", "*.jpeg", "*.jpg", "*.jpe", "*.jp2", "*.png", "*.webp", "*.pbm", "*.pgm", "*.ppm",
-                 "*.pxm", "*.pnm", "*.pfm", "*.sr", "*.ras", "*.tiff", "*.tif", "*.exr", "*.hdr", "*.pic"]
+    """Get all images files from supported filetypes.
+
+    Allowed filetypes:
+    bmp, dib, exr, hdr, jp2, jpe, jpeg, jpg, pbm, pfm, pgm, pic, png, pnm, ppm, 
+    pxm, ras, sr, tif, tiff, webp
+    """
+    filetypes = ["*.bmp", "*.dib", "*.jpeg", "*.jpg", "*.jpe", "*.jp2", "*.png", 
+    "*.webp", "*.pbm", "*.pgm", "*.ppm", "*.pxm", "*.pnm", "*.pfm", "*.sr", 
+    "*.ras", "*.tiff", "*.tif", "*.exr", "*.hdr", "*.pic"]
+
     files = []
     for type in filetypes:
         files.extend(glob.glob(__self__ + "/" + type))
@@ -63,6 +68,7 @@ def get_all_files(__self__):
 
 
 def show_image(__self__):
+    """Creates the window and displays an image file"""
     name = 'ImageViewer'
     frame = cv2.imread(__self__, 1)
     cv2.namedWindow(name, cv2.WINDOW_GUI_NORMAL)
